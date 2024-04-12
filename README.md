@@ -1,54 +1,36 @@
-# Astro Starter Kit: Basics
+<div align="center">
+  <a href="https://landing-page-gc.netlify.app/" target="_blank">
+  <img src="./public/gc.png" width="200"/> 
+  </a>
+  <h3>
+    <strong>Landing page del proyecto GC</strong>
+  </h3>
+</div>
 
-```sh
-npm create astro@latest -- --template basics
-```
+Página incial del proyecto Global Constellation donde están unificadas todas las herramientas de trabajo, documentación y comunicación.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+El proyecto es Open Source, así que si te interesa aportar es super bienvenido.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Contribuir
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+1. Para contribuir, crea un [Fork](https://github.com/glaboryp/landing-page-gc/fork) del proyecto.
 
-## 🚀 Project Structure
+2. Clona el repositorio en tu máquina local:
 
-Inside of your Astro project, you'll see the following folders and files:
+    ```bash
+    git clone git@github.com:tu_username/landing-page-gc.git
+    ```
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+3. Instala las dependencias y ejecuta la aplicación en local
+    ```bash
+    pnpm install
+    pnpm dev run
+    ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+4. Realiza los cambios y crea una pull request 🚀
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🛠️ Stack
+- [**Astro**](https://astro.build/) - The web framework for content-driven websites
+- [**Tailwindcss**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [**ESLint**](https://eslint.org/) - Find and fix problems in your JavaScript code
+- [**Prettier**](https://prettier.io/) - An opinionated code formatter.
