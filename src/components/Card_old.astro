@@ -1,0 +1,22 @@
+---
+interface Props {
+	title: string;
+	body: string;
+	href: string;
+	src: string;
+}
+
+const { href, title, body, src } = Astro.props;
+---
+
+<li>
+	<a href={href} class="flex flex-col p-5 rounded-md bg-white justify-center items-center">
+		<img src={src}>
+		<h2>
+			{title}
+		</h2>
+		<p>
+			{body}
+		</p>
+	</a>
+</li>

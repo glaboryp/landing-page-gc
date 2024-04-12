@@ -1,0 +1,30 @@
+---
+interface Props {
+	title: string;
+	body: string;
+	href: string;
+	img: string;
+}
+
+const { href, title, body, img } = Astro.props
+---
+
+<a
+  href={href}
+  target="_blank"
+  class="rounded-md border shadow-md bg-gray-800 border-gray-700 hover:scale-105 hover:bg-gray-700 hover:border-gray-500 transition flex flex-col"
+>
+  <picture class="flex justify-center p-4">
+    <img class="mb-5 rounded-lg" src={img} alt={`Imagen del `} />
+  </picture>
+
+  <header class="p-4 flex-grow">
+    <h2 class="my-2 text-2xl font-bold tracking-tight">
+      {title}
+    </h2>
+
+    <p class="mb-4 font-light text-gray-400">
+      {body}
+    </p>
+  </header>
+</a>
