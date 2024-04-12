@@ -1,38 +1,47 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/Card.astro'
+
+import { herramientas } from '../data/herramientas'
 ---
 
-<Layout title="Welcome to Astro.">
-	<main class="py-20 min-h-screen w-full overflow-hidden">
-		<section>
-      <h1>
-        Herramientas internas
-      </h1>
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 p-5">
-        <Card
-          href="https://docs.astro.build/"
-          title="Harvest"
-          body="Gestor de expedientes"
-          img="/harvest.svg"
-        />
-        <Card
-          href="https://astro.build/integrations/"
-          title="Orbis"
-          body="Base de datos institucional de la Prelatura"
-        />
-        <Card
-          href="https://astro.build/themes/"
-          title="Themes"
-          body="Explore a galaxy of community-built starter themes."
-        />
-        <Card
-          href="https://astro.build/chat/"
-          title="Community"
-          body="Come say hi to our amazing Discord community. ❤️"
-        />
-			</div>
-    </section>
+<Layout title="Global Constellation">
+	<main class="py-32 min-h-screen w-full overflow-hidden mt-20">
+		{
+			herramientas.map(({ id, title, list }) => {
+				return (
+				<section id={id}>
+					<h1>
+						{ title }
+					</h1>
+					<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 p-5">
+						{
+							list.map(({ id, title, body, img, href }) => {
+								return (
+									<Card
+										href={href}
+										title={title}
+										body={body}
+										img={img}
+									/>
+								)
+							})
+						}
+					</div>
+				</section>
+				)
+			})
+		}
+
+		<section id="sobre-proyecto">
+			<h1>
+				Sobre el proyecto
+			</h1>
+			<p>
+				<em>Global Constellation</em> es un proyecto de la asesoría central cuya meta es facilitar la comunicación y el trabajo de las asesorías, las delegaciones y los consejos locales. Si quieres saber más, <a class="text-slate-700 dark:text-slate-100 hover:text-slate-500 dark:hover:text-slate-400" href="http://wikis.org/es/index.php/Historia" target="_blank" rel="noopener noreferrer">pincha aquí</a>
+			</p>
+		</section>
+		
 	</main>
 </Layout>
 
