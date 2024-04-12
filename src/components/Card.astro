@@ -1,9 +1,9 @@
 ---
 interface Props {
-	title: string;
-	body: string;
-	href: string;
-	img: string;
+	title: string
+	body: string
+	href: string
+	img: string
 }
 
 const { href, title, body, img } = Astro.props
@@ -12,19 +12,24 @@ const { href, title, body, img } = Astro.props
 <a
   href={href}
   target="_blank"
-  class="rounded-md border shadow-md bg-gray-800 border-gray-700 hover:scale-105 hover:bg-gray-700 hover:border-gray-500 transition flex flex-col"
+  class="
+    flex flex-col justify-center items-center p-5
+    bg-white dark:bg-slate-800
+    rounded-md border border-slate-200 dark:border-slate-700
+    shadow-md shadow-slate-400/10 dark:shadow-slate-800/10
+    hover:scale-105 hover:bg-slate-50 dark:hover:bg-slate-700
+    transition
+  "
 >
   <picture class="flex justify-center p-4">
-    <img class="mb-5 rounded-lg" src={img} alt={`Imagen del `} />
+    <img class="mb-5 rounded-lg" src={img} alt={`Imagen del `} width="100"/>
   </picture>
 
-  <header class="p-4 flex-grow">
-    <h2 class="my-2 text-2xl font-bold tracking-tight">
-      {title}
-    </h2>
+  <h2 class="my-2 text-3xl font-bold tracking-tight">
+    {title}
+  </h2>
 
-    <p class="mb-4 font-light text-gray-400">
-      {body}
-    </p>
-  </header>
+  <p class="mb-4 font-light text-gray-400">
+    {body}
+  </p>
 </a>
