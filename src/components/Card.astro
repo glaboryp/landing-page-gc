@@ -6,7 +6,9 @@ interface Props {
 	img: string
 }
 
-const { href, title, body, img } = Astro.props
+const { href, title, body, cuerpo, img } = Astro.props
+
+const { currentLocale } = Astro
 ---
 
 <a
@@ -25,11 +27,11 @@ const { href, title, body, img } = Astro.props
     <img class="mb-5 rounded-lg" src={img} alt={`Imagen del `} width="100"/>
   </picture>
 
-  <h2 class="my-2 text-3xl font-bold tracking-tight">
+  <h2 class="my-2 text-2xl font-bold tracking-tight">
     {title}
   </h2>
 
   <p class="mb-4 font-light text-gray-400">
-    {body}
+    {currentLocale === 'es' ? cuerpo : body}
   </p>
 </a>

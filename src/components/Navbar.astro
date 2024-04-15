@@ -1,5 +1,10 @@
 ---
 import ThemeToggler from "../components/ThemeToggler.astro"
+import LanguageToggler from "../components/LanguageToggler.astro"
+
+import { getI18n } from '../i18n'
+const { currentLocale } = Astro
+const i18n = getI18n({ currentLocale })
 ---
 
 <div id="navbar"
@@ -25,18 +30,20 @@ import ThemeToggler from "../components/ThemeToggler.astro"
     <div class="flex flex-row items-center gap-x-6 py-5">
       
       <a class="text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-100 transition-colors duration-300" 
-        href="#internas">Herramientas internas</a>
+        href="#internas">{i18n.internas}</a>
     
       <a class="text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-100 transition-colors duration-300" 
-        href="#externas">Herramientas externas</a>
+        href="#externas">{i18n.externas}</a>
     
       <a class="text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-100 transition-colors duration-300" 
-        href="#documentacion">Documentacion</a>
+        href="#documentacion">{i18n.documentacion}</a>
 
       <a class="text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-100 transition-colors duration-300" 
-        href="#sobre-proyecto">Sobre el proyecto</a>
+        href="#sobre-proyecto">{i18n.sobre_proyecto}</a>
     
       <ThemeToggler />
+
+      <LanguageToggler />
 
     </div>
 
