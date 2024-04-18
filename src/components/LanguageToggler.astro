@@ -1,9 +1,26 @@
+---
+const { currentLocale } = Astro
+console.log(currentLocale)
+---
+
 <div class="switch">
-  <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+  <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" checked={currentLocale === 'en'}>
   <label for="language-toggle"></label>
   <span class="on">ES</span>
   <span class="off">EN</span>
 </div>
+
+<script>
+  const toggle = document.getElementById('language-toggle')
+  toggle.addEventListener('click', function() {
+    if (toggle.checked) {
+      location.href = '/en'
+    } else {
+      location.href = '/'
+    }
+  })
+  
+</script>
 
 <style>
 .switch {
@@ -14,7 +31,7 @@
 
 .switch > span {
   position: absolute;
-  top: 14px;
+  top: 10px;
   pointer-events: none;
   font-family: 'Helvetica', Arial, sans-serif;
   font-weight: bold;
@@ -34,7 +51,6 @@ input.check-toggle-round-flat:checked ~ .on {
 }
 
 .switch > span.on {
-  left: 0;
   padding-left: 2px;
   color: #000000;
 }
@@ -47,7 +63,6 @@ input.check-toggle-round-flat:checked ~ .on {
 
 .check-toggle {
   position: absolute;
-  margin-left: -9999px;
   visibility: hidden;
 }
 .check-toggle + label {
@@ -63,7 +78,7 @@ input.check-toggle-round-flat:checked ~ .on {
 
 input.check-toggle-round-flat + label {
   padding: 2px;
-  width: 97px;
+  width: 100px;
   height: 35px;
   background-color: #febd59;
   -webkit-border-radius: 60px;
