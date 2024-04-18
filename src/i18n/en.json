@@ -3,5 +3,7 @@
   "internas": "Internal tools",
   "externas": "External tools",
   "documentacion": "Documentation",
-  "sobre_proyecto": "About the project"
+  "sobre_proyecto": "About the project",
+  "explicacion": "is a project of the central advisory whose goal is to facilitate communication and work of the advisory, delegations and local councils. If you want to know more,",
+  "link": "click here"
 }

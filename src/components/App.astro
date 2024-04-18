@@ -4,11 +4,13 @@ import Card from '../components/Card.astro'
 
 import { herramientas } from '../data/herramientas'
 
+import { getI18n } from '../i18n'
 const { currentLocale } = Astro
+const i18n = getI18n({ currentLocale })
 ---
 
 <Layout title="Global Constellation">
-	<main class="py-32 min-h-screen w-full overflow-hidden mt-20">
+	<main class="py-32 min-h-screen w-full overflow-hidden mt-20 flex flex-col gap-10">
 		{
 			herramientas.map(({ id, title, titulo, list }) => {
 				return (
@@ -38,10 +40,10 @@ const { currentLocale } = Astro
 
 		<section id="sobre-proyecto">
 			<h1 class="text-4xl text-center font-bold">
-				Sobre el proyecto
+				{i18n.sobre_proyecto}
 			</h1>
 			<p>
-				<em>Global Constellation</em> es un proyecto de la asesoría central cuya meta es facilitar la comunicación y el trabajo de las asesorías, las delegaciones y los consejos locales. Si quieres saber más, <a class="text-slate-700 dark:text-slate-100 hover:text-slate-500 dark:hover:text-slate-400" href="http://wikis.org/es/index.php/Historia" target="_blank" rel="noopener noreferrer">pincha aquí</a>
+				<em>Global Constellation</em> {i18n.explicacion} <a class="text-slate-700 dark:text-slate-100 hover:text-slate-500 dark:hover:text-slate-400" href="http://wikis.org/es/index.php/Historia" target="_blank" rel="noopener noreferrer">{i18n.link}</a>
 			</p>
 		</section>
 		
