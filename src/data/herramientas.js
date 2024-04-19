@@ -16,14 +16,14 @@ export const herramientas = [
         title: 'Orbis',
         cuerpo: 'Base de datos institucional',
         body: "Institutional database",
-        img: '/orbis.png'
+        img: '/orbis.webp'
       },
       {
         href: 'http://wikis.org/es/index.php/Outlook',
         title: 'Outlook',
         cuerpo: 'Mail personal y corporativo para comunicación',
         body: 'Personal and corporate mail for communication',
-        img: '/outlook.png'
+        img: '/outlook.webp'
       }
     ]
   },
@@ -37,14 +37,14 @@ export const herramientas = [
         title: 'NextCloud',
         cuerpo: 'Nube privada para almacenamiento y colaboración en línea',
         body: 'Private cloud for online storage and collaboration',
-        img: '/nextCloud.png'
+        img: '/nextCloud.webp'
       },
       {
         href: '',
         title: 'Wekan',
         cuerpo: 'Herramienta de gestión de proyectos tipo Trello',
         body: 'Trello-like project management tool',
-        img: 'wekan.png'
+        img: 'wekan.webp'
       },
       {
         href: '',
@@ -65,7 +65,7 @@ export const herramientas = [
         title: 'Wikis GC',
         cuerpo: 'Aquí encontrarás toda la documentación del proyecto Global Constellation y sus herramientas',
         body: 'Here you will find all the Global Constellation project documentation and tools',
-        img: '/logo.png'
+        img: '/logo.webp'
       },
       {
         href: 'http://wikis.org/harvest_es/index.php',
