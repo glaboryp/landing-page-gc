@@ -81,6 +81,14 @@ export const herramientas = [
         cuerpo: 'Aquí encontrarás toda la documentación de Harvest',
         body: 'Here you will find all Harvest documentation',
         img: '/harvest.svg'
+      },
+      {
+        href: 'http://wikis.org/es/index.php/Wikidocs',
+        href_en: 'http://wikis.org/en/index.php/Wikidocs',
+        title: 'WikiDocs',
+        cuerpo: 'Aquí encontrarás algunos documentos internos como Experiencias, Instrucciones...',
+        body: 'Here you will find some internal documents such as Experiences, Instructions...',
+        img: '/wikidocs.svg'
       }
     ]
   },

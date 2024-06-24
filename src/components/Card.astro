@@ -9,10 +9,12 @@ interface Props {
 const { href, href_en, title, body, cuerpo, img } = Astro.props
 
 const { currentLocale } = Astro
+
+const link = currentLocale === 'es' ? href : href_en
 ---
 
 <a
-  href={currentLocale === 'es' ? href : href_en}
+  href={link}
   target="_blank"
   class="
     flex flex-col justify-center items-center p-5
