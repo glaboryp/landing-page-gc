@@ -44,19 +44,19 @@ export const herramientas = [
         img: '/nextCloud.webp'
       },
       {
-        href: '',
-        href_en: '',
+        href: '#',
+        href_en: '#',
         title: 'Wekan',
-        cuerpo: 'Herramienta de gestión de proyectos tipo Trello',
-        body: 'Trello-like project management tool',
+        cuerpo: 'Herramienta de gestión de proyectos tipo Trello. Link: cloud.vegagc.org/wekan',
+        body: 'Trello-like project management tool. Link: cloud.vegagc.org/wekan',
         img: 'wekan.webp'
       },
       {
-        href: '',
-        href_en: '',
+        href: '#',
+        href_en: '#',
         title: 'Active Collab',
-        cuerpo: 'Herramienta de gestión de proyectos y tareas',
-        body: 'Project management tool that allows you to organize your work and task',
+        cuerpo: 'Herramienta de gestión de proyectos y tareas. Link: collab.acrhome.org',
+        body: 'Project management tool that allows you to organize your work and task. Link: collab.acrhome.org',
         img: 'activecollab.webp'
       }
     ]
