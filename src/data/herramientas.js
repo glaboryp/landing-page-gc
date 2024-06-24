@@ -16,7 +16,7 @@ export const herramientas = [
         href: 'http://wikis.org/es/index.php/Orbis',
         href_en: 'http://wikis.org/en/index.php/Orbis:_Personal_data',
         title: 'Orbis',
-        cuerpo: 'Base de datos institucional',
+        cuerpo: 'Base de datos institucional de la Prelatura',
         body: "Institutional database",
         img: '/orbis.webp'
       },
@@ -70,8 +70,8 @@ export const herramientas = [
         href: 'http://wikis.org/es/index.php',
         href_en: 'http://wikis.org/en/index.php',
         title: 'Wikis GC',
-        cuerpo: 'Aquí encontrarás toda la documentación del proyecto Global Constellation y sus herramientas',
-        body: 'Here you will find all the Global Constellation project documentation and tools',
+        cuerpo: 'Documentación del proyecto Global Constellation y sus herramientas',
+        body: 'Global Constellation project documentation and tools',
         img: '/logo.webp'
       },
       {
@@ -86,8 +86,8 @@ export const herramientas = [
         href: 'http://wikis.org/es/index.php/Wikidocs',
         href_en: 'http://wikis.org/en/index.php/Wikidocs',
         title: 'WikiDocs',
-        cuerpo: 'Aquí encontrarás algunos documentos internos como Experiencias, Instrucciones...',
-        body: 'Here you will find some internal documents such as Experiences, Instructions...',
+        cuerpo: 'Documentos internos como Experiencias, Instrucciones...',
+        body: 'Internal documents such as Experiences, Instructions...',
         img: '/wikidocs.svg'
       }
     ]
