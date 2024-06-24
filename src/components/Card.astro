@@ -6,13 +6,13 @@ interface Props {
 	img: string
 }
 
-const { href, title, body, cuerpo, img } = Astro.props
+const { href, href_en, title, body, cuerpo, img } = Astro.props
 
 const { currentLocale } = Astro
 ---
 
 <a
-  href={href}
+  href={currentLocale === 'es' ? href : href_en}
   target="_blank"
   class="
     flex flex-col justify-center items-center p-5
