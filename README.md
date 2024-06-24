@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://landing-page-gc.netlify.app/" target="_blank">
-  <img src="./public/gc.png" width="200"/> 
+  <img src="./public/gc.webp" width="200"/> 
   </a>
   <h3>
     <strong>Landing page del proyecto GC</strong>
